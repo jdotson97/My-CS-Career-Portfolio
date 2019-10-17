@@ -1,0 +1,11 @@
+C:\Users\joshu\source\repos\signup\signup-dotnetcore
+--output-path=obj\Debug\netcoreapp2.0\
+--application-name=signup-dotnetcore
+--content-root=C:\Users\joshu\source\repos\signup\signup-dotnetcore
+--file=C:\Users\joshu\source\repos\signup\signup-dotnetcore\Views\Shared\Error.cshtml
+--file=C:\Users\joshu\source\repos\signup\signup-dotnetcore\Views\Shared\_Layout.cshtml
+--file=C:\Users\joshu\source\repos\signup\signup-dotnetcore\Views\Signup\Billing.cshtml
+--file=C:\Users\joshu\source\repos\signup\signup-dotnetcore\Views\Signup\Index.cshtml
+--file=C:\Users\joshu\source\repos\signup\signup-dotnetcore\Views\Signup\Summary.cshtml
+--file=C:\Users\joshu\source\repos\signup\signup-dotnetcore\Views\Signup\ThankYou.cshtml
+--file=C:\Users\joshu\source\repos\signup\signup-dotnetcore\Views\_ViewStart.cshtml

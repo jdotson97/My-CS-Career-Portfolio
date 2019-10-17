@@ -1,0 +1,24 @@
+C:\Users\joshu\source\repos\EZ-Social-Media-Manager-ALPHA\EZ Social Media Manager pre-alpha\bin\Release\EZ Social Media Manager pre-alpha.exe.config
+C:\Users\joshu\source\repos\EZ-Social-Media-Manager-ALPHA\EZ Social Media Manager pre-alpha\bin\Release\EZ Social Media Manager pre-alpha.exe.manifest
+C:\Users\joshu\source\repos\EZ-Social-Media-Manager-ALPHA\EZ Social Media Manager pre-alpha\bin\Release\EZ Social Media Manager pre-alpha.application
+C:\Users\joshu\source\repos\EZ-Social-Media-Manager-ALPHA\EZ Social Media Manager pre-alpha\bin\Release\EZ Social Media Manager pre-alpha.exe
+C:\Users\joshu\source\repos\EZ-Social-Media-Manager-ALPHA\EZ Social Media Manager pre-alpha\bin\Release\EZ Social Media Manager pre-alpha.pdb
+C:\Users\joshu\source\repos\EZ-Social-Media-Manager-ALPHA\EZ Social Media Manager pre-alpha\bin\Release\Newtonsoft.Json.dll
+C:\Users\joshu\source\repos\EZ-Social-Media-Manager-ALPHA\EZ Social Media Manager pre-alpha\bin\Release\Newtonsoft.Json.xml
+C:\Users\joshu\source\repos\EZ-Social-Media-Manager-ALPHA\EZ Social Media Manager pre-alpha\obj\Release\EZ_Social_Media_Manager_pre_alpha.About.resources
+C:\Users\joshu\source\repos\EZ-Social-Media-Manager-ALPHA\EZ Social Media Manager pre-alpha\obj\Release\EZ_Social_Media_Manager_pre_alpha.IGFollowerSummary.resources
+C:\Users\joshu\source\repos\EZ-Social-Media-Manager-ALPHA\EZ Social Media Manager pre-alpha\obj\Release\EZ_Social_Media_Manager_pre_alpha.forms.LiveStream.resources
+C:\Users\joshu\source\repos\EZ-Social-Media-Manager-ALPHA\EZ Social Media Manager pre-alpha\obj\Release\EZ_Social_Media_Manager_pre_alpha.Login.resources
+C:\Users\joshu\source\repos\EZ-Social-Media-Manager-ALPHA\EZ Social Media Manager pre-alpha\obj\Release\EZ_Social_Media_Manager_pre_alpha.MainMenu.resources
+C:\Users\joshu\source\repos\EZ-Social-Media-Manager-ALPHA\EZ Social Media Manager pre-alpha\obj\Release\EZ_Social_Media_Manager_pre_alpha.MakeAPost.resources
+C:\Users\joshu\source\repos\EZ-Social-Media-Manager-ALPHA\EZ Social Media Manager pre-alpha\obj\Release\EZ_Social_Media_Manager_pre_alpha.ManageMedia.resources
+C:\Users\joshu\source\repos\EZ-Social-Media-Manager-ALPHA\EZ Social Media Manager pre-alpha\obj\Release\EZ_Social_Media_Manager_pre_alpha.MessagePopup.resources
+C:\Users\joshu\source\repos\EZ-Social-Media-Manager-ALPHA\EZ Social Media Manager pre-alpha\obj\Release\EZ_Social_Media_Manager_pre_alpha.Properties.Resources.resources
+C:\Users\joshu\source\repos\EZ-Social-Media-Manager-ALPHA\EZ Social Media Manager pre-alpha\obj\Release\EZ Social Media Manager pre-alpha.csproj.GenerateResource.cache
+C:\Users\joshu\source\repos\EZ-Social-Media-Manager-ALPHA\EZ Social Media Manager pre-alpha\obj\Release\EZ Social Media Manager pre-alpha.csproj.CoreCompileInputs.cache
+C:\Users\joshu\source\repos\EZ-Social-Media-Manager-ALPHA\EZ Social Media Manager pre-alpha\obj\Release\EZ Social Media Manager pre-alpha.exe.manifest
+C:\Users\joshu\source\repos\EZ-Social-Media-Manager-ALPHA\EZ Social Media Manager pre-alpha\obj\Release\EZ Social Media Manager pre-alpha.application
+C:\Users\joshu\source\repos\EZ-Social-Media-Manager-ALPHA\EZ Social Media Manager pre-alpha\obj\Release\EZ Social Media Manager pre-alpha.csproj.CopyComplete
+C:\Users\joshu\source\repos\EZ-Social-Media-Manager-ALPHA\EZ Social Media Manager pre-alpha\obj\Release\EZ Social Media Manager pre-alpha.exe
+C:\Users\joshu\source\repos\EZ-Social-Media-Manager-ALPHA\EZ Social Media Manager pre-alpha\obj\Release\EZ Social Media Manager pre-alpha.pdb
+C:\Users\joshu\source\repos\EZ-Social-Media-Manager-ALPHA\EZ Social Media Manager pre-alpha\obj\Release\EZ Social Media Manager pre-alpha.csprojResolveAssemblyReference.cache

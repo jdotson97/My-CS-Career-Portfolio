@@ -1,0 +1,5 @@
+make the comment cache lists a child of posts much like posts are a child of pages
+settings customize color theme
+make the about page not shit and add links to the terms of service and what not
+
+drive kent software engineering shared

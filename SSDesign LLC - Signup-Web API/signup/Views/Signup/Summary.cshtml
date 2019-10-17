@@ -1,0 +1,69 @@
+﻿
+@{
+    ViewBag.Title = "Summary - SSDesign LLC";
+}
+
+<div style="text-align: center; margin-top: 4px;">
+    <h1 style="margin: auto;"><strong>Sign Up!</strong></h1>
+    <p style="margin: auto;">
+        <div>
+            Using the following fields, please provide us with
+            some information that'll allow us to get your account
+            all set up.<br>
+        </div>
+    </p>
+</div>
+
+<a href="/Signup"><div class="signup-tab signup-tab-inactive"><h4>Info</h4></div></a>
+<a href="/Signup/Billing"><div class="signup-tab signup-tab-inactive"><h4>Billing</h4></div></a>
+<a href="#"><div class="signup-tab signup-tab-active"><h4>Summary</h4></div></a><br>
+
+<article>
+    <form action="/Signup/Summary?agreedTAC=true" method="post">
+        <h4 style="margin-bottom: 14px; margin-top: 0px;"><strong>Summary</strong></h4>
+
+        <div style="position: relative; width: 100%; margin-bottom: 14px; border: 1px solid white;"></div>
+
+        <!-- Cart Items Table-->
+        <p>
+            (<strong>1x</strong>) - <strong>EZ-Social Media Manager</strong><br>
+            <span style="font-style: italic;">Allows one to access EZ-Social Media Manager for an entire month!</span>
+        </p><br>
+
+        <!-- Cost Summary Table -->
+        <div style="color: white; background-color: darkred; border: 2px solid grey; padding: 14px 14px;">
+            <table style="margin-bottom: 3%; width: 100%">
+                <tr>
+                    <td>Subtotal:</td>
+                    <td>$2.99</td>
+                </tr>
+                <tr>
+                    <td>Tax:</td>
+                    <td>$0.20</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>________</td>
+                </tr>
+                <tr>
+                    <th>Total:</th>
+                    <th>$3.19</th>
+                </tr>
+            </table>
+
+            Promo Code: <input type="text" name="PromoCode" style="margin: 4px;"><br>
+            @Html.CheckBox("AgreedTAC") I have read, and agree to the terms and conditions.
+        </div>
+
+        <h4 style="float: left; margin-left: 5%;">
+            <!--type="submit"-->
+            <input value="< Info" type="button" onclick="window.location.href = '/Signup/Billing';" class="signup-button">
+        </h4>
+        <h4 style="float: right; margin-right: 5%;">
+            <input class="signup-button" type="submit" value="🔒 Submit">
+        </h4><br><br>
+
+        <p>@ViewBag.ErrorMessage</p>
+    </form>
+</article>
+

@@ -1,0 +1,147 @@
+﻿body
+{
+    padding: 4px 4px;
+}
+
+header h2 {
+    float: right;
+    margin-right: 2%;
+    margin-top: 55px;
+    color: #DAB4A7;
+    font-style: italic;
+    font-family: sans-serif;
+}
+
+nav ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: darkred;
+    border: 2px solid darkgray;
+}
+
+nav ul li
+{
+    float: left;
+    border-right: 1px solid darkgray;
+}
+
+nav ul li:last-child 
+{
+    border-right: none;
+    border-left: 1px solid darkgray;
+}
+
+nav ul li a:hover 
+{
+    background-color: indianred;
+}
+
+nav ul li a 
+{
+    display: block;
+    color: white;
+    text-align: center;
+    font-size: 14pt;
+    padding: 14px 14px;
+    text-decoration: none;
+}
+
+.signup-tab
+{
+    float: left;   
+    padding: 4px 14px;
+    margin: 4px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    width: 10%;
+    text-align: center;
+    background-color: indianred;
+    color: white;
+    border: 2px solid grey;
+    border-bottom: none;
+}
+.signup-tab-active 
+{
+    background-color: indianred;
+}
+.signup-tab-inactive 
+{
+    background-color: darkred;
+}
+
+.signup-input-text 
+{
+    border: solid 2px grey;
+    background-color: white;
+    color: grey;
+    padding-left: 4px;
+}
+
+aside
+{
+    position: relative;
+    float: left;
+    height: 90%;
+    width: 10%;
+    margin: 0;
+    
+    padding: 14px 14px;
+    color: white;
+    border: 2px solid darkgrey;
+    border-top: none;
+    border-bottom: none;
+    background-color: darkred;
+    padding-bottom: 50%;
+}
+section 
+{
+    float: left;
+    color: whitesmoke;
+    padding: 4px 14px;
+    padding-bottom: 30%;
+    margin: 0;
+    width: 85%;
+    border-top: 2px solid grey;
+    border-left: 2px solid grey;
+}
+section article 
+{
+    float: left;
+    width: 100%;
+    color: white;
+    background-color: indianred;
+    border: 2px solid grey;
+    border-top: none;
+    align-content: center;
+    padding: 14px 14px;
+}
+section button 
+{
+    padding: 4px 14px;
+    margin-top: 14px;
+    background-color: darkgrey;
+    color: white;
+    font-family: sans-serif;
+}
+section button:hover 
+{
+    background-color: lightgreen;
+}
+
+footer 
+{
+    position: relative;
+    float: left;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    padding: 14px 14px;
+    color: white;
+    border: 2px solid darkgrey;
+    background-color: darkred;
+}
+

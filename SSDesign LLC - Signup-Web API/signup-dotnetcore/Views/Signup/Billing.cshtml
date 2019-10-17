@@ -1,0 +1,85 @@
+﻿@{
+    ViewBag.Title = "🔒 Signup - SSDesign LLC";
+}
+
+<h2><strong>@ViewBag.Message</strong></h2>
+<p>
+    Using the following fields, please provide us with
+    some information that'll allow us to get your account
+    all set up.<br>
+</p>
+
+<a href="/Signup"><div class="signup-tab signup-tab-inactive"><h4>1. Info</h4></div></a>
+<a href="/Signup/Billing"><div class="signup-tab signup-tab-active"><h4>2. Billing</h4></div></a>
+<a href="#"><div class="signup-tab signup-tab-inactive"><h4>3. Summary</h4></div></a><br>
+
+<article>
+    <form action="/Signup/Billing" method="post">
+        <h4 style="margin-bottom: 14px; margin-top: 0px;"><strong>Billing</strong></h4>
+
+        <!-- Form text feilds -->
+        <div>
+            <!-- Credit card information -->
+            <b>First Name:<br><input class="signup-input-text" type="text" name="Firstname"></b><br>
+            <b>Last Name:<br><input class="signup-input-text" type="text" name="Lastname"></b><br>
+            <b>Card Number:<br><input class="signup-input-text" type="text" name="CardNumber" id="card" oninput="normalizeCardFormat()"></b> 🔒<br>
+
+            <b>Expiration (MM/YYYY):<br><input class="signup-input-text" type="text" name="Expiration" id="date" oninput="normalizeDateFormat()"></b>
+            <span id="dateMessage" style="color: white;"></span><br>
+
+            <b>Security Code:<br><input class="signup-input-text" type="text" name="SecurityCode"></b><br><br>
+
+            <!-- Billing address for verification -->
+            <div style="color: white; background-color: darkred; border: 2px solid grey; padding: 14px 14px;">
+                <h4 style="margin-top: 0px;">Billing Address</h4>
+
+                <b>Street Address: <input class="signup-input-text" type="text"></b>
+                <b>City:  <input class="signup-input-text" type="text"></b><br>
+                <b>State:  <input class="signup-input-text" type="text"></b>
+                <b>Country:  <input class="signup-input-text" type="text"></b><br>
+                <b>ZIP:  <input class="signup-input-text" type="text"></b>
+            </div>
+        </div>
+
+        <h4><b><input style="padding: 4px 14px; margin-top: 14px; background-color: darkred; color: white;" type="submit" value="Summary >>"></b></h4><br><br>
+    </form>
+</article>
+<script>
+    function normalizeDateFormat()
+    {
+        var dateString = document.getElementById('date');
+        var dateMessage = document.getElementById('dateMessage');
+
+        if (dateString.value.length >= 2 && dateString.value.length != 0) {
+            dateMessage.innerHTML = "";
+
+            if (!Number.isNaN(dateString.value.substring(0, 2))) {
+                if (dateString.value.length < 3) {
+                    dateString.value += '/';
+                }
+                else if ((dateString.value.charAt(2) == '/') && (Number.isNaN(dateString.value.substring(3)))) {
+                    dateMessage.innerHTML = "Please enter a valid date!"
+                }
+            }
+            else {
+                dateMessage.innerHTML = "Please enter a valid date!"
+            }
+        }
+    }
+    function normalizeCardFormat()
+    {
+        var cardString = document.getElementById('card');
+
+        if (cardString.value.length != 19 && cardString.value.length != 0) {
+            cardString.setAttribute("style", "border: 2px solid red;");
+
+            if (cardString.value.length == 4 || cardString.value.length == 9 || cardString.value.length == 14) {
+                cardString.value += ' ';
+            }
+        }
+        else {
+            cardString.setAttribute("style", "border: none;");
+        }
+    }
+</script>
+

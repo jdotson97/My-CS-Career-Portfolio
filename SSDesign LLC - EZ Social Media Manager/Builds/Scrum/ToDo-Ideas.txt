@@ -1,0 +1,18 @@
+create a secure way to store the app secret without doing the server shit
+create a way to encode a video stream to rtmp stream and push frames to graph api, thus creating a live video on facebook
+add interactions
+convert the amin menus panel to a flow layout panel so that the buttons with arrange themselves
+fix the nothing selected thing going on in the message box
+
+find a way to make the instagram accounts separate from the facebook page selector. Or not its up to us
+
+see what matt thinks about the dynamic loading of posts or to keep posts loaded at startup
+
+read in pages and posts in the same api request!!
+
+reply to comments is a thing in instagram and therefore needs implemented
+
+
+
+
+

@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "signup", "signup\signup.csproj", "{C7C06367-C21E-4CC8-AA2B-AF93801DDB57}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "signupTests", "signupTests\signupTests.csproj", "{CE2805DB-F1A9-4F5B-A96D-DA2CF46CAB21}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C7C06367-C21E-4CC8-AA2B-AF93801DDB57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7C06367-C21E-4CC8-AA2B-AF93801DDB57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7C06367-C21E-4CC8-AA2B-AF93801DDB57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7C06367-C21E-4CC8-AA2B-AF93801DDB57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE2805DB-F1A9-4F5B-A96D-DA2CF46CAB21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE2805DB-F1A9-4F5B-A96D-DA2CF46CAB21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE2805DB-F1A9-4F5B-A96D-DA2CF46CAB21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE2805DB-F1A9-4F5B-A96D-DA2CF46CAB21}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8F0F2D0B-2FC0-44C8-82D3-E09443626EF8}
+		VisualSVNWorkingCopyRoot = .
+	EndGlobalSection
+EndGlobal

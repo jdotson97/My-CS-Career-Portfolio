@@ -1,0 +1,2 @@
+Make it be able to psot and make the software check for a picture
+enter posts into managemedia window

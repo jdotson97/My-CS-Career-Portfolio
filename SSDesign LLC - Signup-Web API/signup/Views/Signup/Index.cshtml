@@ -1,0 +1,85 @@
+﻿@{
+    ViewBag.Title = "🔒 Signup - SSDesign LLC";
+}
+
+<div style="text-align: center; margin-top: 4px;">
+    <h1 style="margin: auto;"><strong>Sign Up!</strong></h1>
+    <p style="margin: auto;">
+        <div>
+            Using the following fields, please provide us with
+            some information that'll allow us to get your account
+            all set up.<br>
+        </div>
+    </p>
+</div>
+
+
+<a href="/Signup"><div class="signup-tab signup-tab-active"><h4>Info</h4></div></a>
+<a href="#"><div class="signup-tab signup-tab-inactive"><h4>Billing</h4></div></a>
+<a href="#"><div class="signup-tab signup-tab-inactive"><h4>Summary</h4></div></a><br>
+
+<article>
+    <form action="/Signup" method="post">
+        <h4 style="margin-bottom: 14px; margin-top: 0px;"><strong>Information</strong></h4>
+
+        <!-- Bullet point list of all available products to subscribe to -->
+        <div style="color: white; background-color: darkred; border: 2px solid grey; border-radius: 14px; padding: 14px 14px; margin-bottom: 4px;">
+            <!-- Form text fields -->
+            <h4 style="margin-bottom: 14px; margin-top: 0px;">Your Info</h4>
+            <div>
+                <b>First Name<span style="color: red; padding: 2px;">*</span><br>
+                <input class="signup-input-text" type="text" name="Firstname" value="@Session["Firstname"]"></b><br>
+
+                <b>Last Name<span style="color: red; padding: 2px;">*</span>
+                <br><input class="signup-input-text" type="text" name="Lastname" value="@Session["Lastname"]"></b><br>
+
+                <b>Email<span style="color: red; padding: 2px;">*</span><br>
+                <input class="signup-input-text" type="text" name="Email" value="@Session["Email"]"></b><br>
+
+                <b>Username<span style="color: red; padding: 2px;">*</span><br>
+                <input class="signup-input-text" type="text" name="Username" value="@Session["username"]"></b><br>
+
+                <b>Password<span style="color: red; padding: 2px;">*</span><br>
+                <input class="signup-input-text" type="text" id="password" name="Password" value="@Session["password"]" oninput="validatePassword()"></b><br>
+
+                <b>Confirm Password<span style="color: red; padding: 2px;">*</span><br>
+                <input class="signup-input-text" type="text" id="confirm" value="@Session["password"]" oninput="validatePassword()"></b>
+                <span id="matching" style="padding: 4px;"></span>
+
+                <p><span style="color: red; padding: 2px;">*</span> = required field</p>
+
+                <strong><span style="color: white;">@ViewBag.ErrorMessage</span></strong><br><br>
+            </div>
+
+            <h4 style="margin-bottom: 14px; margin-top: 0px;">Subscriptions</h4>
+            <input type="checkbox" name="Product" checked> <strong>EZ-Social Media Manager</strong><br>
+        </div>
+
+        <h4 style="text-align: center;">
+            <input class="signup-button" style="margin: auto;" type="submit" value="Billing >">
+        </h4>
+
+    </form>
+</article>
+<script>
+    function validatePassword() {
+        var password = document.getElementById('password');
+        var confirm = document.getElementById('confirm');
+        var notafication = document.getElementById('matching');
+
+        if (password.value.length > 0 && password.value.length < 8) {
+            notafication.innerHTML = "Password needs to be at least 8 characters!";
+            password.setAttribute("style", "border: 2px solid red;");
+        }
+        else if (confirm.value.length > 0 && (password.value !== confirm.value)) {
+            notafication.innerHTML = "Passwords do not match!";
+            confirm.setAttribute("style", "border: 2px solid red;");
+        }
+        else {
+            notafication.innerHTML = "";
+            password.setAttribute("style", "border: 2px solid grey;");
+            confirm.setAttribute("style", "border: 2px solid grey;");
+        }
+    }
+</script>
+

@@ -1,0 +1,65 @@
+﻿@{
+    ViewBag.Title = "🔒 Signup - SSDesign LLC";
+}
+
+<h2><strong>@ViewBag.Message</strong></h2>
+<p>
+    Using the following fields, please provide us with
+    some information that'll allow us to get your account
+    all set up.<br>
+</p>
+
+<a href="/Signup"><div class="signup-tab signup-tab-active"><h4>1. Info</h4></div></a>
+<a href="/Signup/Billing"><div class="signup-tab signup-tab-inactive"><h4>2. Billing</h4></div></a>
+<a href="#"><div class="signup-tab signup-tab-inactive"><h4>3. Summary</h4></div></a><br>
+
+<article>
+    <form action="/Signup" method="post">
+        <h4 style="margin-bottom: 14px; margin-top: 0px;"><strong>Information</strong></h4>
+
+        <!-- Form text fields -->
+        <div>
+            <b>First Name:<br><input class="signup-input-text" type="text" name="Firstname"></b><br>
+            <b>Last Name:<br><input class="signup-input-text" type="text" name="Lastname"></b><br>
+            <b>Email:<br><input class="signup-input-text" type="text" name="Email"></b><br>
+
+            <b>Username:<br><input class="signup-input-text" type="text" name="Username"></b><br>
+            <b>Password:<br><input class="signup-input-text" type="text" id="password" name="Password" oninput="validatePassword()"></b><br>
+            <b>Confirm Password:<br><input class="signup-input-text" type="text" id="confirm" oninput="validatePassword()"></b>
+
+            <p id="matching"></p><br>
+        </div>
+
+        <!-- Bullet point list of all available products to subscribe to -->
+        <div style="color: white; background-color: darkred; border: 2px solid grey; padding: 14px 14px; margin-bottom: 4px;">
+            <h4 style="margin-bottom: 14px; margin-top: 0px;"><strong>Subscriptions</strong></h4>
+            <input type="checkbox" name="Product" checked> <strong>EZ-Social Media Manager</strong><br>
+        </div>
+
+        <h4><b><input style="padding: 4px 14px; margin-top: 14px; background-color: darkred; color: white;" type="submit" value="Billing >>"></b></h4>
+
+        <span style="color: white;">@ViewBag.ErrorMessage</span>
+    </form>
+</article>
+<script>
+    function validatePassword() {
+        var password = document.getElementById('password');
+        var confirm = document.getElementById('confirm');
+        var notafication = document.getElementById('matching');
+
+        if (password.value.length > 0 && password.value.length < 8) {
+            notafication.innerHTML = "Password needs to be at least 8 characters!";
+            password.setAttribute("style", "border: 2px solid red;");
+        }
+        else if (confirm.value.length > 0 && (password.value !== confirm.value)) {
+            notafication.innerHTML = "Passwords do not match!";
+            confirm.setAttribute("style", "border: 2px solid red;");
+        }
+        else {
+            notafication.innerHTML = "";
+            password.setAttribute("style", "border: 2px solid grey;");
+            confirm.setAttribute("style", "border: 2px solid grey;");
+        }
+    }
+</script>
+

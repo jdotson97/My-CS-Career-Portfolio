@@ -1,0 +1,7 @@
+C:\Users\joshu\source\repos\Chess_Engine_DotNet\Chess_Engine_DotNet\bin\Debug\Chess_Engine_DotNet.exe.config
+C:\Users\joshu\source\repos\Chess_Engine_DotNet\Chess_Engine_DotNet\bin\Debug\Chess_Engine_DotNet.exe
+C:\Users\joshu\source\repos\Chess_Engine_DotNet\Chess_Engine_DotNet\bin\Debug\Chess_Engine_DotNet.pdb
+C:\Users\joshu\source\repos\Chess_Engine_DotNet\Chess_Engine_DotNet\obj\Debug\Chess_Engine_DotNet.csproj.CoreCompileInputs.cache
+C:\Users\joshu\source\repos\Chess_Engine_DotNet\Chess_Engine_DotNet\obj\Debug\Chess_Engine_DotNet.exe
+C:\Users\joshu\source\repos\Chess_Engine_DotNet\Chess_Engine_DotNet\obj\Debug\Chess_Engine_DotNet.pdb
+C:\Users\joshu\source\repos\Chess_Engine_DotNet\Chess_Engine_DotNet\obj\Debug\Chess_Engine_DotNet.csprojResolveAssemblyReference.cache

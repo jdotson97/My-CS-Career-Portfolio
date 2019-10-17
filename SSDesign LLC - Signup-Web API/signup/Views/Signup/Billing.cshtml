@@ -1,0 +1,152 @@
+﻿@{
+    ViewBag.Title = "🔒 Signup - SSDesign LLC";
+}
+
+<div style="text-align: center; margin-top: 4px;">
+    <h1 style="margin: auto;"><strong>Sign Up!</strong></h1>
+    <p style="margin: auto;">
+        <div>
+            Using the following fields, please provide us with
+            some information that'll allow us to get your account
+            all set up.<br>
+        </div>
+    </p>
+</div>
+
+<a href="/Signup"><div class="signup-tab signup-tab-inactive"><h4>Info</h4></div></a>
+<a href="/Signup/Billing"><div class="signup-tab signup-tab-active"><h4>Billing</h4></div></a>
+<a href="#"><div class="signup-tab signup-tab-inactive"><h4>Summary</h4></div></a><br>
+
+<article>
+    <form action="/Signup/Billing" method="post" id="billing-form">
+        <h4 style="margin-bottom: 14px; margin-top: 0px;"><strong>Billing</strong></h4>
+
+        <!-- Form text fields -->
+        <div>
+            <!-- Billing address for verification -->
+            <div style="color: white; background-color: darkred; border: 2px solid grey; border-radius: 14px; padding: 14px 14px;">
+                <h4 style="margin-top: 0px;">Billing Information</h4>
+
+                <!-- Customer Information -->
+                <b>
+                    First Name<span style="color: red; padding: 2px;">*</span><br>
+                    <input class="signup-input-text" type="text" name="Firstname" value="@Session["BillingFirstname"]">
+                </b><br>
+
+                <b>
+                    Middle Initial<br>
+                    <input class="signup-input-text" type="text" name="Firstname">
+                </b><br>
+
+                <b>
+                    Last Name<span style="color: red; padding: 2px;">*</span><br>
+                    <input class="signup-input-text" type="text" name="Lastname" value="@Session["BillingLastname"]">
+                </b><br>
+
+                <b>
+                    Address Line 1<span style="color: red; padding: 2px;">*</span><br>
+                    <input class="signup-input-text" type="text" name="Address1" value="@Session["Address1"]">
+                </b><br>
+
+                <b>
+                    Address Line 2<br>
+                    <input class="signup-input-text" type="text" name="Address2" value="@Session["Address2"]">
+                </b><br>
+
+                <b>
+                    City<span style="color: red; padding: 2px;">*</span><br>
+                    <input class="signup-input-text" type="text" name="City" value="@Session["City"]">
+                </b><br>
+
+                <b>
+                    State Code<span style="color: red; padding: 2px;">*</span><br>
+                    <input class="signup-input-text" type="text" name="State" value="@Session["State"]">
+                </b><br>
+
+                <b>
+                    Country Code<span style="color: red; padding: 2px;">*</span><br>
+                    <input class="signup-input-text" type="text" name="Country" value="@Session["Country"]">
+                </b><br>
+
+                <!-- Only thing we really need to know -->
+                <b>
+                    ZIP<span style="color: red; padding: 2px;">*</span><br>
+                    <input class="signup-input-text" type="text" name="ZipCode" value="@Session["ZIP"]">
+                    <span style="margin-left: 14px;"><strong>&lt;-- Must match the 'Postal' field in card info!</strong></span>
+                </b><br>
+
+                <p><span style="color: red; padding: 2px;">*</span> = required field</p>
+
+                <strong><span style="color: white;">@ViewBag.ErrorMessage</span></strong><br>
+            </div>
+
+            <!-- Square Credit Card Information -->
+            <div id="sq-ccbox" style="color: white; background-color: darkred; border: 2px solid grey; border-radius: 14px; padding: 14px 14px; margin-bottom: 4px; margin-top: 4px;">
+                <h4 style="margin-top: 0px;">Powered by Square</h4>
+
+                <div>
+                    <br><input id="sq-card-number" class="sq-input" type="text"><br>
+                </div>
+                <div>
+                    <input id="sq-expiration-date" class="sq-input" type="text"><br>
+                </div>
+                <div>
+                    <input id="sq-cvv" class="sq-input" type="text"><br>
+                </div>
+                <div>
+                    <input id="sq-postal-code" class="sq-input" type="text"><br>
+                </div>
+
+                <!-- Stores the card Nonce before post -->
+                <input id="card-nonce" type="hidden" name="Nonce">
+            </div>
+        </div>
+
+        <h4 style="float: left; margin-left: 5%;">
+            <!--type="submit"-->
+            <input value="< Info" type="button" onclick="window.location.href = '/Signup';" class="signup-button">
+        </h4>
+        <h4 style="float: right; margin-right: 5%;">
+            <!--type="submit"-->
+            <input id="sq-creditcard" value="Summary >" type="button" onclick="onGetCardNonce(event)" class="signup-button">
+        </h4><br><br>
+
+    </form>
+</article>
+<script>
+    function normalizeDateFormat() {
+        var dateString = document.getElementById('sq-expiration-date');
+        var dateMessage = document.getElementById('dateMessage');
+
+        if (dateString.value.length >= 2 && dateString.value.length != 0) {
+            dateMessage.innerHTML = "";
+
+            if (!Number.isNaN(dateString.value.substring(0, 2))) {
+                if (dateString.value.length < 3) {
+                    dateString.value += '/';
+                }
+                else if ((dateString.value.charAt(2) == '/') && (Number.isNaN(dateString.value.substring(3)))) {
+                    dateMessage.innerHTML = "Please enter a valid date!"
+                }
+            }
+            else {
+                dateMessage.innerHTML = "Please enter a valid date!"
+            }
+        }
+    }
+    function normalizeCardFormat() {
+        var cardString = document.getElementById('card');
+
+        if (cardString.value.length != 19 && cardString.value.length != 0) {
+            cardString.setAttribute("style", "border: 2px solid red;");
+
+            if (cardString.value.length == 4 || cardString.value.length == 9 || cardString.value.length == 14) {
+                cardString.value += ' ';
+            }
+        }
+        else {
+            cardString.setAttribute("style", "border: none;");
+        }
+    }
+</script>
+

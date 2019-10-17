@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="~/Content/Site.css">
+
+    <!-- link to the SqPaymentForm library -->
+    <script type="text/javascript" src="https://js.squareup.com/v2/paymentform">
+    </script>
+
+    <!-- Create global javascript variables for the mysqpaymentform.js static js from web.config -->
+    <script type="text/javascript">
+        sqAppID = '@System.Configuration.ConfigurationManager.AppSettings["sqAppID"].ToString()';
+        sqAppIDTest = '@System.Configuration.ConfigurationManager.AppSettings["sqAppIDTest"].ToString()';
+    </script>
+
+    <!-- link to the local SqPaymentForm initialization -->
+    <script type="text/javascript" src="~/Scripts/mysqpaymentform.js">
+    </script>
+
+    <!-- link to the local custom styles for SqPaymentForm -->
+    <link rel="stylesheet" type="text/css" href="~/Content/mysqpaymentform.css">
+
+    <title>@ViewBag.Title</title>
+
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <!-- This header contains navbar elements and the title photo. -->
+    <header>
+        <h1 style="float: left; color: grey; margin-left: 4px;">
+            <strong>Simplicity Software Design LLC</strong>
+        </h1>
+        <h3 style="float: right; color: grey; margin-top: 30px; margin-right: 4px; font-style: italic;">
+            Simplifying Software Since 2018
+        </h3>
+
+        <!-- <img src="title_img.png" alt="Title_Picture" height="100" width="350" style="margin-bottom: 100px;"> -->
+        <!-- <img src="caffine.png" alt="Side_Picture" height="100" width="75" style="float: right;"> -->
+
+        <!-- The navigation bar. -->
+        <nav>
+            <ul>
+                <li><a href="https://simplicitysoftwaredesign.com/">Home</a></li>
+                <li><a href="https://simplicitysoftwaredesign.com/#3191a9c5-da31-45fd-8916-8a3d0bb06317">Contact</a></li>
+                <!--<li><a href="/Signup">Sign Up</a></li>-->
+                <li style="float: right;"><a href="http://107.211.69.236:443/ezcmm/EZ-Installer.msi">Download</a></li>
+                <!--<li style="float: right;"><a href="https://simplicitysoftwaredesign.com/">About</a></li>-->
+            </ul>
+        </nav>
+
+        <!-- The below is reference code for redirecting to server actions for when we have the entire site on this server. Append at symbol-->
+        <!--Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { class = "navbar-brand" })-->
+        <!--<ul class="nav navbar-nav">
+            <li>Html.ActionLink("Home", "Index", "Home")</li>
+            <li>Html.ActionLink("About", "About", "Home")</li>
+            <li>Html.ActionLink("Contact", "Contact", "Home", null, new { style = "float: right;" })</li>
+        </ul>-->
+    </header>
+
+    <!-- This area will be reserved for ad space, and other misc. things. -->
+    <!--
+    <aside>
+        <p style="margin-bottom: 0px;">
+            This web application implementes the sign up logic for SSDesign LLC products, allowing user's to authenticate
+            through our EZ-API!<br><br>
+
+            Josh Dotson B.S.<br>
+            Lead Software Engineer<br>
+            SSDesign, LLC.<br><br>
+        </p>
+        <div style="font-style: italic;">
+            <p style="border: 2px solid lightgreen; padding: 10px; padding-bottom: 32px">
+                <u>Thing that you looked at today and didn't realize you were being watched!</u><br><br>
+            </p>
+            <p style="border: 2px solid lightyellow; padding: 10px; padding-bottom: 32px">
+                <u>How to earn $500 a day without leaving your home.</u>
+            </p>
+        </div>
+    </aside> -->
+
+    <section style="color:grey;">
+        @RenderBody()
+    </section>
+
+    <footer>
+        <p>Copyright (c) Simplicity Software Design 2018-@DateTime.Now.Year All Rights Reserved.</p>
+    </footer>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

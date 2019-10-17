@@ -1,0 +1,8 @@
+auto scroll notatification thingy in the managemedia make the managemedia buttons actaully say something
+live new message notifications from within the managemedia window FB
+
+--make instagram gray text shit work
+--research drap and drop buttons and shit for main menu and the managemedia window
+
+--possible color customization integration
+--reminders and shit

@@ -1,0 +1,13 @@
+C:\Users\joshu\source\repos\signup\signup-dotnetcore\bin\Release\netcoreapp2.0\signup-dotnetcore.deps.json
+C:\Users\joshu\source\repos\signup\signup-dotnetcore\bin\Release\netcoreapp2.0\signup-dotnetcore.runtimeconfig.json
+C:\Users\joshu\source\repos\signup\signup-dotnetcore\bin\Release\netcoreapp2.0\signup-dotnetcore.runtimeconfig.dev.json
+C:\Users\joshu\source\repos\signup\signup-dotnetcore\bin\Release\netcoreapp2.0\signup-dotnetcore.dll
+C:\Users\joshu\source\repos\signup\signup-dotnetcore\bin\Release\netcoreapp2.0\signup-dotnetcore.pdb
+C:\Users\joshu\source\repos\signup\signup-dotnetcore\bin\Release\netcoreapp2.0\MySql.Data.dll
+C:\Users\joshu\source\repos\signup\signup-dotnetcore\obj\Release\netcoreapp2.0\signup-dotnetcore.csproj.CoreCompileInputs.cache
+C:\Users\joshu\source\repos\signup\signup-dotnetcore\obj\Release\netcoreapp2.0\signup-dotnetcore.AssemblyInfoInputs.cache
+C:\Users\joshu\source\repos\signup\signup-dotnetcore\obj\Release\netcoreapp2.0\signup-dotnetcore.AssemblyInfo.cs
+C:\Users\joshu\source\repos\signup\signup-dotnetcore\obj\Release\netcoreapp2.0\signup-dotnetcore.csproj.CopyComplete
+C:\Users\joshu\source\repos\signup\signup-dotnetcore\obj\Release\netcoreapp2.0\signup-dotnetcore.dll
+C:\Users\joshu\source\repos\signup\signup-dotnetcore\obj\Release\netcoreapp2.0\signup-dotnetcore.pdb
+C:\Users\joshu\source\repos\signup\signup-dotnetcore\obj\Release\netcoreapp2.0\signup-dotnetcore.csprojResolveAssemblyReference.cache

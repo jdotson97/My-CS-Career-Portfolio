@@ -1,0 +1,54 @@
+﻿
+@{
+    ViewBag.Title = "Summary - SSDesign LLC";
+}
+
+<h2><strong>@ViewBag.Message</strong></h2>
+<p>
+    Using the following fields, please provide us with
+    some information that'll allow us to get your account
+    all set up.<br>
+</p>
+
+<a href="/Signup"><div class="signup-tab signup-tab-inactive"><h4>1. Info</h4></div></a>
+<a href="/Signup/Billing"><div class="signup-tab signup-tab-inactive"><h4>2. Billing</h4></div></a>
+<a href="#"><div class="signup-tab signup-tab-active"><h4>3. Summary</h4></div></a><br>
+
+<article>
+    <form action="/Signup/Summary" method="post">
+        <h4 style="margin-bottom: 14px; margin-top: 0px;"><strong>Summary</strong></h4>
+
+        <div style="position: relative; width: 100%; margin-bottom: 14px; border: 1px solid white;"></div>
+
+        <!-- Cart Items Table-->
+        <p>
+            (<strong>1x</strong>) - <strong>EZ-Social Media Manager</strong><br>
+            <span style="font-style: italic;">Allows one to access EZ-Social Media Manager for an entire month!</span>
+        </p>
+
+        <!-- Cost Summary Table -->
+        <div style="color: white; background-color: darkred; border: 2px solid grey; padding: 14px 14px;">
+            <table style="margin-bottom: 5%; width: 100%">
+                <tr>
+                    <td>Subtotal:</td>
+                    <td>$2.99</td>
+                </tr>
+                <tr>
+                    <td>Tax:</td>
+                    <td>$0.20</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>________</td>
+                </tr>
+                <tr>
+                    <td>Total:</td>
+                    <td>$3.19</td>
+                </tr>
+            </table>
+        </div>
+
+        <h4><b><input style="padding: 4px 14px; margin-top: 14px; background-color: darkred; color: white;" type="submit" value="🔒 Submit"></b></h4><br><br>
+    </form>
+</article>
+
