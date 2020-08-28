@@ -1,7 +1,0 @@
-create a secure way to store the app secret without doing the server shit
-create a way to encode a video stream to rtmp stream and push frames to graph api, thus creating a live video on facebook
-add interactions
-make the buttons and managemedia work and do something
-make the manage media right half its own facebook panel so the whole thing can be made invisble should the user select the instagram button
-convert the amin menus panel to a flow layout panel so that the buttons with arrange themselves
-fix the nothing selected thing going on in the message box

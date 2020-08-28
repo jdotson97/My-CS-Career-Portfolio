@@ -1,5 +1,0 @@
-comment on posts
-comment on comments
-make the refresh button work
-
-look into messaging and conversations
