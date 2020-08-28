@@ -358,7 +358,7 @@
             this.Main_Panel_Bottom_Label.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.Main_Panel_Bottom_Label.AutoSize = true;
             this.Main_Panel_Bottom_Label.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Main_Panel_Bottom_Label.Location = new System.Drawing.Point(219, 4331);
+            this.Main_Panel_Bottom_Label.Location = new System.Drawing.Point(219, 4562);
             this.Main_Panel_Bottom_Label.Name = "Main_Panel_Bottom_Label";
             this.Main_Panel_Bottom_Label.Padding = new System.Windows.Forms.Padding(0, 0, 0, 4);
             this.Main_Panel_Bottom_Label.Size = new System.Drawing.Size(167, 18);
@@ -702,7 +702,6 @@
             // Facebook_Unlink_Button
             // 
             this.Facebook_Unlink_Button.BackColor = System.Drawing.Color.IndianRed;
-            this.Facebook_Unlink_Button.Enabled = false;
             this.Facebook_Unlink_Button.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Facebook_Unlink_Button.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Facebook_Unlink_Button.Location = new System.Drawing.Point(35, 154);

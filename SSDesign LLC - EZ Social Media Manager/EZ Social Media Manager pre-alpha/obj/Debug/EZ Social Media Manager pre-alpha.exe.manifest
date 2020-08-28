@@ -3,7 +3,7 @@
   <asmv1:assemblyIdentity name="EZ Social Media Manager pre-alpha.exe" version="0.0.0.1" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="EZ Social Media Manager pre-alpha" version="1.0.7143.21945" language="neutral" processorArchitecture="msil" />
+    <assemblyIdentity name="EZ Social Media Manager pre-alpha" version="1.0.7545.10380" language="neutral" processorArchitecture="msil" />
     <commandLine file="EZ Social Media Manager pre-alpha.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -15,14 +15,14 @@
       <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
         <!--
           UAC Manifest Options
-          If you want to change the Windows User Account Control level replace the 
+          If you want to change the Windows User Account Control level replace the
           requestedExecutionLevel node with one of the following.
 
         <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
         <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
         <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
 
-         If you want to utilize File and Registry Virtualization for backward 
+         If you want to utilize File and Registry Virtualization for backward
          compatibility then delete the requestedExecutionLevel node.
     -->
         <requestedExecutionLevel level="asInvoker" uiAccess="false" />
@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EZ Social Media Manager pre-alpha.exe" size="1798112">
-      <assemblyIdentity name="EZ Social Media Manager pre-alpha" version="1.0.7143.21945" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EZ Social Media Manager pre-alpha.exe" size="1797120">
+      <assemblyIdentity name="EZ Social Media Manager pre-alpha" version="1.0.7545.10380" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>thO8JAM3jLb5Gsd1tQ6xQIN3QMZPJ69OYG01IMRvUM8=</dsig:DigestValue>
+        <dsig:DigestValue>RkTnm32UNoQWc2uqORte3pDMP/w3kywSnsSLSXNwAGg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

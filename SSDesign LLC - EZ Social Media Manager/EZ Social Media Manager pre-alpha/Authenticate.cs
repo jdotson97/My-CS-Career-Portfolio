@@ -97,7 +97,7 @@ namespace EZ_Social_Media_Manager_pre_alpha
             using (HttpClient httpClient = new HttpClient
             {
                 //Release
-                BaseAddress = new Uri("https://api.simplicitysoftwaredesign.ml/")
+                BaseAddress = new Uri("https://ssdesignsignup.azurewebsites.net//")
                 //Debug
                 //BaseAddress = new Uri("http://localhost:50091/")
             })

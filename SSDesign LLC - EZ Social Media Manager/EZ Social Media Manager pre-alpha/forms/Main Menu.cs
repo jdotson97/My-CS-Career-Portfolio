@@ -289,16 +289,16 @@ namespace EZ_Social_Media_Manager_pre_alpha
 
         private void Facebook_Unlink_Button_Click(object sender, EventArgs e)
         {
-            using (var popup = new MessagePopup("Are you sure you want to unlink this?"))
-            {
-                if (popup.ShowDialog() == DialogResult.OK)
-                {
+            // using (var popup = new MessagePopup("Are you sure you want to unlink this?"))
+            // {
+            //    if (popup.ShowDialog() == DialogResult.OK)
+            //    {
                     Task.Run(() => FacebookAPIInfo.facebookService.DeleteFacebookObject(FacebookAPIInfo.userAccessToken, $"{FacebookAPIInfo.FBAccount.id}/permissions"));
                     FacebookAPIInfo.IsUserLoggedIn = false;
 
                     Web_Browser.Navigate(string.Format("https://www.facebook.com/logout.php?next={0}&access_token={1}", "https://www.facebook.com/connect/login_success.html", FacebookAPIInfo.userAccessToken));
-                }
-            }
+            //    }
+            // }
         }
         private void Facebook_Logout_Button_Click(object sender, EventArgs e)
         {

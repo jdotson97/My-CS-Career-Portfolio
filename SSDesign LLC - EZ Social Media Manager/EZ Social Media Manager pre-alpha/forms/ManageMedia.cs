@@ -233,20 +233,20 @@ namespace EZ_Social_Media_Manager_pre_alpha
         }
         private void Posts_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //if the user selects the last index in the posts, he or she wants to load more posts...
+            // if the user selects the last index in the posts, he or she wants to load more posts...
             if ((FBPostsList.SelectedIndex == (FBPostsList.Items.Count - 1) && FBPostsList.SelectedIndex != -1) && (FacebookAPIInfo.FBPages[Page_Selector.SelectedIndex].posts.paging.next != ""))
             {
                 FBPostsList.Items.RemoveAt(FBPostsList.Items.Count - 1);
                 FBPostsList.Items.Add("Loading more posts...");
 
-                var getNextPost = FacebookAPIInfo.facebookService.GetFacebookObject<FacebookMessageObject>(
-
+                var getNextPost = FacebookAPIInfo.facebookService.GetFacebookObject<FacebookMessageObject>
+                (
                     access_token:   FacebookAPIInfo.FBPages[Page_Selector.SelectedIndex].access_token,
                     objectID:       FacebookAPIInfo.FBPages[Page_Selector.SelectedIndex].id,
                     edge:           "feed",
                     arguments:      $"fields=id,from,message,created_time&limit=25&after={FacebookAPIInfo.FBPages[Page_Selector.SelectedIndex].posts.paging.cursors.after}"
-
                 );
+                
                 Task.WaitAll(getNextPost);
 
                 if (getNextPost.Result.paging != null)

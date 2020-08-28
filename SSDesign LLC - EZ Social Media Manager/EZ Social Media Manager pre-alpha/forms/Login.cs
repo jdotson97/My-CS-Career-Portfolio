@@ -57,7 +57,7 @@ namespace EZ_Social_Media_Manager_pre_alpha
             using (HttpClient httpClient = new HttpClient
             {
                 //Release
-                BaseAddress = new Uri("https://api.simplicitysoftwaredesign.ml/")
+                BaseAddress = new Uri("https://ssdesignsignup.azurewebsites.net/")
                 //Debug
                 //BaseAddress = new Uri("http://localhost:50091/")
             })
@@ -158,11 +158,11 @@ namespace EZ_Social_Media_Manager_pre_alpha
         }
         private void SignUpButton_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("https://simplicitysoftwaredesign.com/");
+            System.Diagnostics.Process.Start("https://ssdesignsignup.azurewebsites.net/");
         }
         private void ForgotButton_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("https://simplicitysoftwaredesign.com/");
+            System.Diagnostics.Process.Start("https://ssdesignsignup.azurewebsites.net/");
         }
 
         private void UpdateButton_Click(object sender, EventArgs e)
