@@ -56,9 +56,9 @@ namespace TextGameBase
                 senseDescriptions: new List<string>
                 {
                     /*Sight*/ "looks like a ugly black cat sporting a hideously ugly face, and a stupid tail",
-                    /*Sound*/ "seems to be making this tiny little annoying ass meowing sounds almost like he wants you to feed him",
+                    /*Sound*/ "seems to be making this tiny little annoying meowing sounds almost like he wants you to feed him",
                     /*Touch*/ "feels very soft and makes an ugly trill sound when touched",
-                    /*Smell*/ "smells like he taken a fair share of farts to the face",
+                    /*Smell*/ "smells bad",
                     /*Taste*/ "you'd rather not..."
                 },
 
