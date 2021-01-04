@@ -1,0 +1,13 @@
+C:\Users\joshu\source\repos\TextGameBase\bin\Debug\netcoreapp3.1\TextGameBase.exe
+C:\Users\joshu\source\repos\TextGameBase\bin\Debug\netcoreapp3.1\TextGameBase.deps.json
+C:\Users\joshu\source\repos\TextGameBase\bin\Debug\netcoreapp3.1\TextGameBase.runtimeconfig.json
+C:\Users\joshu\source\repos\TextGameBase\bin\Debug\netcoreapp3.1\TextGameBase.runtimeconfig.dev.json
+C:\Users\joshu\source\repos\TextGameBase\bin\Debug\netcoreapp3.1\TextGameBase.dll
+C:\Users\joshu\source\repos\TextGameBase\bin\Debug\netcoreapp3.1\TextGameBase.pdb
+C:\Users\joshu\source\repos\TextGameBase\obj\Debug\netcoreapp3.1\TextGameBase.csprojAssemblyReference.cache
+C:\Users\joshu\source\repos\TextGameBase\obj\Debug\netcoreapp3.1\TextGameBase.AssemblyInfoInputs.cache
+C:\Users\joshu\source\repos\TextGameBase\obj\Debug\netcoreapp3.1\TextGameBase.AssemblyInfo.cs
+C:\Users\joshu\source\repos\TextGameBase\obj\Debug\netcoreapp3.1\TextGameBase.csproj.CoreCompileInputs.cache
+C:\Users\joshu\source\repos\TextGameBase\obj\Debug\netcoreapp3.1\TextGameBase.dll
+C:\Users\joshu\source\repos\TextGameBase\obj\Debug\netcoreapp3.1\TextGameBase.pdb
+C:\Users\joshu\source\repos\TextGameBase\obj\Debug\netcoreapp3.1\TextGameBase.genruntimeconfig.cache
